@@ -1,8 +1,14 @@
-/** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line no-undef
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        alluvium: {
+          bg: '#F0F2F6',
+        },
+      },
+    },
   },
   plugins: [],
 };

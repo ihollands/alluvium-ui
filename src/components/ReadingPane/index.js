@@ -1,19 +1,47 @@
-import { stringify } from 'himalaya';
+// import { useEffect, useRef, useState } from 'react';
 
-const ReadingPane = ({ jsonHtml }) => {
-  const htmlString = stringify(jsonHtml);
+import parse, { attributesToProps, domToReact } from 'html-react-parser';
 
+import PGraph from 'components/PGraph';
+import Title from 'components/Title';
+
+const cleanProps = (attrs) => {
+  const props = attributesToProps(attrs);
+
+  delete props.className;
+
+  return props;
+};
+
+const parseOptions = {
+  replace: ({ tagName, attribs, children }) => {
+    if (!attribs) {
+      return;
+    }
+
+    const props = cleanProps(attribs);
+
+    if (tagName === 'p') {
+      return <PGraph {...props}>{domToReact(children, parseOptions)}</PGraph>;
+    }
+  },
+};
+
+const ReadingPane = ({ title, htmlString }) => {
   return (
     <div
       className="
-        max-w-4xl
+        bg-white
+        shadow-md
+        border
+        border-stone-900
+        max-w-[600px]
         mx-auto
-        bg-stone-100
-        p-10
-        rounded-3xl
+        p-11
       "
     >
-      <div dangerouslySetInnerHTML={{ __html: htmlString }} />
+      <Title title={title} />
+      {parse(htmlString, parseOptions)}
     </div>
   );
 };

@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Wed Jun  8 13:40:32 2022
+# Make data base, printed on Mon Aug  1 13:29:30 2022
 
 # Variables
 
@@ -47,7 +47,7 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 INFOPATH = /opt/homebrew/share/info:
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/s_/75p7lvts5dq4ybvsc9z_xkbc0000gn/T/vscode-ipc-49f8d8a3-fb98-41e9-8073-bb45da20612b.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/s_/75p7lvts5dq4ybvsc9z_xkbc0000gn/T/vscode-ipc-16fcec19-6fef-47ce-98c5-b0bec697e988.sock
 # environment
 VSCODE_CWD = /
 # environment
@@ -55,7 +55,7 @@ PATH = /usr/local/sbin:/Users/ian/bin:/usr/local/bin:/opt/homebrew/bin:/opt/home
 # environment
 LSCOLORS = ExFxBxDxCxegedabagacad
 # environment
-LaunchInstanceID = 75FA72BD-B85F-4AE6-B029-67E32F690D5F
+LaunchInstanceID = F35C6723-B805-4C51-9942-983E23E6E2B6
 # environment
 VSCODE_LOG_STACK = false
 # environment
@@ -63,7 +63,7 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.1qYWsIfvOe/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.u5BehdHhx3/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -83,7 +83,7 @@ HOME = /Users/ian
 # default
 MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/ian/Library/Application Support/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+VSCODE_CODE_CACHE_PATH = /Users/ian/Library/Application Support/Code/CachedData/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
 # environment
 LOGNAME = ian
 # environment
@@ -125,7 +125,7 @@ TMPDIR = /var/folders/s_/75p7lvts5dq4ybvsc9z_xkbc0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/ian/Library/Application Support/Code/1.67.2-main.sock
+VSCODE_IPC_HOOK = /Users/ian/Library/Application Support/Code/1.68.0-main.sock
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -135,7 +135,7 @@ MFLAGS = -Rrqp
 # environment
 NVM_DIR = /Users/ian/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.6833031.6833040
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.8543091.8543097
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -169,7 +169,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 548
+VSCODE_PID = 626
 # variable set hash-table stats:
 # Load=77/1024=8%, Rehash=0, Collisions=3/100=3%
 
@@ -179,9 +179,9 @@ VSCODE_PID = 548
 
 # Directories
 
-# . (device 16777231, inode 7471472): 15 files, no impossibilities.
+# . (device 16777230, inode 7471472): 20 files, no impossibilities.
 
-# 15 files, no impossibilities in 1 directories.
+# 20 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -271,7 +271,7 @@ help:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Jun  8 13:40:32 2022
+# Finished Make data base on Mon Aug  1 13:29:30 2022
 
  
 make: *** No rule to make target `all'.  Stop.

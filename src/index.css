@@ -4,12 +4,11 @@
 
 @layer base {
   body {
-    @apply text-base
-      leading-8;
+    @apply leading-8 text-stone-900;
   }
 
   a {
-    @apply text-teal-600;
+    @apply underline font-semibold;
   }
 
   h1,
@@ -18,22 +17,46 @@
   h4,
   h5,
   h6 {
-    @apply font-black mt-16 mb-10 py-3 px-5 rounded-full bg-rose-600 text-white inline-block -translate-x-1/2;
+    @apply font-bold mt-16 mb-10;
   }
 
   h1 {
-    @apply text-3xl;
+    @apply text-5xl;
   }
 
   h2 {
-    @apply text-2xl;
+    @apply text-3xl;
   }
 
   h3 {
-    @apply text-xl;
+    @apply text-2xl;
   }
 
   h4 {
-    @apply text-lg;
+    @apply text-xl;
+  }
+
+  p {
+    @apply py-2.5;
+  }
+
+  img {
+    @apply w-1/2 my-10 mx-auto rounded-xl shadow-lg shadow-stone-500/50;
+  }
+}
+
+@layer utilities {
+  .-selected {
+    @apply border
+      border-cyan-700;
+  }
+
+  .-hovered {
+    @apply shadow-md
+      -translate-y-3;
+  }
+
+  .-hovered.-selected {
+    @apply shadow-none translate-y-0;
   }
 }

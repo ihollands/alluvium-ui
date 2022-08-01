@@ -1,5 +1,5 @@
-import { parse } from 'himalaya';
-import editJSON from 'parsers/editJSON';
+// import { parse } from 'himalaya';
+// import editJSON from 'parsers/editJSON';
 
 import articleData from 'data/banana.json';
 
@@ -7,22 +7,24 @@ import ReadingPane from 'components/ReadingPane';
 
 const Reader = () => {
   const {
-    parse: { text },
+    parse: { title, text },
   } = articleData;
 
-  const jsonHtml = parse(text);
-  const cleaned = editJSON(jsonHtml);
-
-  console.log(cleaned);
+  // const jsonHtml = parse(text);
+  // const cleaned = editJSON(jsonHtml);
 
   return (
     <div
       className="
-        py-20
+        pt-32
+        pb-16
         px-5
       "
     >
-      <ReadingPane jsonHtml={cleaned} />
+      <ReadingPane
+        title={title}
+        htmlString={text}
+      />
     </div>
   );
 };

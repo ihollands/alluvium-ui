@@ -4,7 +4,7 @@ const App = () => {
   return (
     <div
       className="
-        bg-stone-200
+        bg-alluvium-bg
         w-screen
         min-h-screen
       "
