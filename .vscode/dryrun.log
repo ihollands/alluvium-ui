@@ -1,9 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-
-	--- Run this command to prepare the build for upload ---
-	make build
-
-make: Entering directory `/Users/ian/Code/React/alluvium-ui'
-exit 0
-make: Leaving directory `/Users/ian/Code/React/alluvium-ui'
- 

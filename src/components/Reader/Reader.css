@@ -1,0 +1,15 @@
+@tailwind components;
+
+@layer components {
+  .sm-affix-actions {
+    right: calc(50vw - 300px);
+    transform: translateX(200%);
+  }
+}
+
+.affix-actions {
+  @apply bottom-5
+    fixed
+    sm:sm-affix-actions
+    right-5;
+}

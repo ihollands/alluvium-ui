@@ -45,6 +45,7 @@
   }
 }
 
+/*
 @layer utilities {
   .-selected {
     @apply border
@@ -60,3 +61,4 @@
     @apply shadow-none translate-y-0;
   }
 }
+*/

@@ -1,5 +1,5 @@
-const Reader = ({ children }) => {
-  return <p>{children}</p>;
+const PGraph = ({ children, ...props }) => {
+  return <p {...props}>{children}</p>;
 };
 
-export default Reader;
+export default PGraph;

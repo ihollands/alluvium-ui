@@ -1,4 +1,4 @@
-// import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import parse, { attributesToProps, domToReact } from 'html-react-parser';
 
@@ -13,21 +13,37 @@ const cleanProps = (attrs) => {
   return props;
 };
 
-const parseOptions = {
-  replace: ({ tagName, attribs, children }) => {
-    if (!attribs) {
-      return;
-    }
-
-    const props = cleanProps(attribs);
-
-    if (tagName === 'p') {
-      return <PGraph {...props}>{domToReact(children, parseOptions)}</PGraph>;
-    }
-  },
-};
-
 const ReadingPane = ({ title, htmlString }) => {
+  const [selected, setSelected] = useState([]);
+
+  function handleClick(e) {
+    setSelected(e.target);
+  }
+
+  useEffect(() => {
+    console.log(selected);
+  }, [selected]);
+
+  const parseOptions = {
+    replace: ({ tagName, attribs, children }) => {
+      if (!attribs) {
+        return;
+      }
+
+      const props = cleanProps(attribs);
+
+      if (tagName === 'p') {
+        return (
+          <PGraph
+            {...props}
+            onClick={handleClick}
+          >
+            {domToReact(children, parseOptions)}
+          </PGraph>
+        );
+      }
+    },
+  };
   return (
     <div
       className="
